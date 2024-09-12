@@ -11,11 +11,15 @@ function renderBooks() {
 
     contentRef.innerHTML += storeTemplate(singleBook, i)
 
-    for (let com = 0; com < books[i].comments.length; com++) {
-      const eleComments = books[i].comments[com];
+  }
 
-      eleComments.innerHTML += storeTemplate(comments, i)
-    }
+  let commentsRef = document.getElementById("comments");
+  commentsRef.innerHTML = "";
+
+  for (let com = 0; com < books[i].comments.length; com++) {
+    const eleComments = books[i].comments[com];
+
+    commentsRef.innerHTML += commentsTemplate(eleComments)
   }
 }
 

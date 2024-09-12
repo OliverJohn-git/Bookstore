@@ -1,4 +1,4 @@
-function storeTemplate(singleBook, i, com){
+function storeTemplate(singleBook, i){
     return /*html*/ `
 <div class = book_card>
     <div><h5 id="booktitle" class="bookTitle">${singleBook.name}</h5></div>
@@ -23,10 +23,15 @@ function storeTemplate(singleBook, i, com){
         <button id ="button_comment" >Kommentieren</button>
       </div>
       <div id = "comments">
-        <p id = "username">${books[i].comments[com].user}</p>
-        <p id = "comment">${books[i].comments[com].comment}</p>
       </div>
     </div>
   </div>
 `;
+}
+
+function commentsTemplate(singleBook){
+  return /*html*/`
+      <p id = "username">${singleBook.user}</p>
+      <p id = "comment">${singleBook.comment}</p>
+  `
 }
