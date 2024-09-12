@@ -1,0 +1,132 @@
+html {
+    scroll-behavior: smooth;
+}
+.d_none{
+    display: none;
+}
+body{
+    background-color:  rgb(131, 123, 123);
+    margin: 0;
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    
+}
+h2{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+h5{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(52, 119, 138);
+}
+p{
+    margin: 0;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+img{
+    object-fit: cover;
+    height:auto;
+    width: 90%;
+}
+.header{
+    background-color: rgb(80, 78, 78);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+}
+.link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 10px;
+}
+.bookContent{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.bookTitle{
+    justify-content: center;
+    display: flex;
+}
+.img_container{
+    display: flex;
+    justify-content: center;
+}
+.info_comm_section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+    
+}
+.information{
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.price{
+    padding-top: 10px;
+}
+.like_section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 10px;
+}
+.thumbs{
+    height: 30px;
+    width: 30px;
+
+}
+.comments_section{
+    height: 150px;
+    width: 90%;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 60px;
+
+}
+#comments{
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+#add_comments{
+    display: flex;
+    justify-content: center;
+}
+#input_comment{
+    width: 90%;
+}
+.footer{
+    background-color: rgb(80, 78, 78);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+}
