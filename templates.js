@@ -23,6 +23,7 @@ function storeTemplate(singleBook, i){
         <button id ="button_comment" >Kommentieren</button>
       </div>
       <div id = "comments">
+        <table id="comments_id${i}"></table>
       </div>
     </div>
   </div>

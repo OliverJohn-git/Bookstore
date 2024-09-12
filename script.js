@@ -12,14 +12,25 @@ function renderBooks() {
     contentRef.innerHTML += storeTemplate(singleBook, i)
 
   }
+ // Jetzt, nachdem das HTML eingefügt wurde, die Kommentare für jedes Buch rendern
+ for (let i = 0; i < books.length; i++) {
+  renderComments(i);
+}
+}
 
-  let commentsRef = document.getElementById("comments");
-  commentsRef.innerHTML = "";
+function renderComments(index) {
+  const commentsElement = document.getElementById('comments_id' + index);
+  const comments = books[index].comments;
 
-  for (let com = 0; com < books[i].comments.length; com++) {
-    const eleComments = books[i].comments[com];
-
-    commentsRef.innerHTML += commentsTemplate(eleComments)
+  if (comments && comments.length > 0) {
+      let commentsHtml = '';
+      for (let i = 0; i < comments.length; i++) {
+          const comment = comments[i];
+          commentsHtml += commentsTemplate(comment);
+      }
+      commentsElement.innerHTML = commentsHtml;
+  } else {
+      commentsElement.innerHTML = "<p>Kommentiere als erstes</p>";
   }
 }
 
