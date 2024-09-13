@@ -20,7 +20,7 @@ function storeTemplate(singleBook, i){
       <div id = "add_comments">
       <input id = "input_name" type="text" placeholder="Name">
         <input id = "input_comment" type="text" placeholder="Kommentar">
-        <button id ="button_comment" >Kommentieren</button>
+        <button id ="button_comment" >Senden</button>
       </div>
       <div id = "comments">
         <table id="comments_id${i}"></table>

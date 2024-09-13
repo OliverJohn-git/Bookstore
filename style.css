@@ -50,6 +50,7 @@ img {
     object-fit: cover;
     height: auto;
     width: 90%;
+    max-height: 300px;
 }
 
 .header {
@@ -71,6 +72,14 @@ img {
 .bookContent {
     margin-left: 5%;
     margin-right: 5%;
+}
+.book_card{
+    background-color: rgb(105,105,105);
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .bookTitle {
@@ -153,11 +162,25 @@ img {
     display: flex;
     justify-content: center;
 }
-
+#input_name{
+    width: 20%;
+}
 #input_comment {
-    width: 90%;
+    width: 50%;
+}
+#button_comment{
+    width: 30%;
 }
 
+#username{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+#comment{
+    font-size: 10px;
+    justify-content: center;
+}
 .footer {
     background-color: rgb(80, 78, 78);
     color: white;
@@ -166,4 +189,11 @@ img {
     align-items: center;
     gap: 10px;
     height: 30px;
+}
+@media (min-width:500px){
+    img {
+        object-fit: cover;
+        height: auto;
+        width: 390px;
+    }
 }
