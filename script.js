@@ -48,3 +48,26 @@ function like(i) {
   }
 }
 
+function addComment(i) {
+  let commentInputRef = document.getElementById("comment_input" + i);
+  let commentInput = commentInputRef.value;
+  const commentName = "Du";
+  const commentText = commentInput.trim();
+  const newComment = {
+    name: commentName,
+    comment: commentText,
+  };
+    
+  if (commentInput == "") {
+    alert(
+      "Schreib einen Kommentar um einen absenden zu können!"
+    );
+    return;
+  } else {
+    books[i].comments.push(newComment);
+    
+    commentInputRef.value = "";
+    
+    renderComments(i);
+  }
+}

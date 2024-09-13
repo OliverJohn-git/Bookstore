@@ -8,7 +8,7 @@ function storeTemplate(singleBook, i){
               <p>Genre: ${singleBook.genre}</p>
               <p>Autor: ${singleBook.author}</p>
               <p>Erscheinungsjahr ${singleBook.publishedYear}</p>
-              <p>Price: ${singleBook.price}</p>
+              <p type="text">Price: ${singleBook.price}€</p>
         </div>
     </div>
     <div class = "like_section">
@@ -18,9 +18,8 @@ function storeTemplate(singleBook, i){
     </div>
     <div class = "comments_section">
       <div id = "add_comments">
-      <input id = "input_name" type="text" placeholder="Name">
-        <input id = "input_comment" type="text" placeholder="Kommentar">
-        <button id ="button_comment" >Senden</button>
+        <input id = "comment_input${i}" type="text" placeholder="Kommentar">
+        <button id ="button_comment${i}" onclick = "addComment(${i})" >Senden</button>
       </div>
       <div id = "comments">
         <table id="comments_id${i}"></table>

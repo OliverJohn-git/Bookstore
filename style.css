@@ -26,7 +26,7 @@ h2 {
 
 h5 {
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
 }
 
@@ -130,7 +130,7 @@ img {
 .comments_section {
     height: 150px;
     width: 90%;
-    background-color: white;
+    background-color: lightgray;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 60px;
@@ -161,9 +161,6 @@ img {
 #add_comments {
     display: flex;
     justify-content: center;
-}
-#input_name{
-    width: 20%;
 }
 #input_comment {
     width: 50%;
