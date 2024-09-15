@@ -54,7 +54,7 @@ function addComment(i) {
   const commentName = "Du";
   const commentText = commentInput.trim();
   const newComment = {
-    name: commentName,
+    user: commentName,
     comment: commentText,
   };
     
